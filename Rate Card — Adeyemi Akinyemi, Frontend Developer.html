@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rate Card — Adeyemi Akinyemi, Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf8;--fg:#0a0a0a;--mut:#6a6c70;--line:#d6d6d2;--dot:#cfcfca;--card:#fff;--acc:#0b8f63;--invbg:#0a0a0a;--invfg:#fafaf8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#090b0e;--fg:#f1f1ee;--mut:#8b9098;--line:#262a31;--dot:#1c2027;--card:#0e1115;--acc:#34d399;--invbg:#f1f1ee;--invfg:#090b0e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#090b0e;--fg:#f1f1ee;--mut:#8b9098;--line:#262a31;--dot:#1c2027;--card:#0e1115;--acc:#34d399;--invbg:#f1f1ee;--invfg:#090b0e;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 "JetBrains Mono",ui-monospace,Menlo,monospace;
+background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:14px 14px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.mono{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+h1,h2,h3{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:1;margin:0;text-transform:uppercase}
+nav{display:flex;justify-content:space-between;align-items:center;margin:16px auto 0;max-width:1100px;padding:12px 18px;background:var(--card);border:1px solid var(--line)}
+nav b{font-weight:500;letter-spacing:.08em}
+.btn{display:inline-block;background:var(--invbg);color:var(--invfg);font:500 12px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:14px 20px;border:1px solid var(--invbg)}
+.btn:hover{background:transparent;color:var(--fg)}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--fg)}
+.hero{padding:80px 0 56px}
+.hero h1{font-size:clamp(38px,7vw,84px);margin:18px 0 22px;max-width:14ch}
+.hero p{max-width:60ch;margin:0}
+section{border-top:1px solid var(--line);padding:56px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.head h2{font-size:clamp(28px,4.5vw,44px)}
+.head .mono{max-width:38ch;text-align:right}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:14px}
+.card .top{display:flex;justify-content:space-between;gap:10px}
+.card .id{color:var(--acc)}
+.card h3{font-size:24px}
+.price{display:flex;align-items:baseline;gap:12px;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line);padding:12px 0}
+.price strong{font:800 32px/1.1 "Inter Tight",system-ui,sans-serif;letter-spacing:-.03em}
+.price small{font:400 12px "JetBrains Mono",monospace;color:var(--mut);letter-spacing:0}
+.card ul{list-style:none;margin:0;padding:0;display:grid;gap:7px;font-size:13px}
+.card li{display:flex;gap:10px}
+.card li::before{content:"+";color:var(--acc);flex:none}
+.card p{margin:0;font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--card);padding:6px 12px;font-size:12px}
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));border:1px solid var(--line);background:var(--card)}
+.terms div{padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13px}
+.terms b{display:block;margin-bottom:6px;font-weight:500;color:var(--acc)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.contact{display:grid;gap:6px;margin-top:26px}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:600px){.head .mono{text-align:left}.hero{padding-top:56px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>[ ADEDEVS ]</b><a class="btn" href="https://iamadedevs.vercel.app/" target="_blank" rel="noopener">Portfolio</a></nav>
+
+<header class="hero">
+<span class="mono">Freelance services // Rate card</span>
+<h1>Frontend development &amp; product building.</h1>
+<p>Responsive websites and web applications for businesses, founders and growing teams.</p>
+</header>
+
+<section id="services">
+<div class="head"><h2>Services &amp; starting prices</h2><span class="mono">// Starting prices. Final quotes depend on scope, complexity and timeline.</span></div>
+<div class="grid">
+<article class="card"><div class="top mono"><span class="id">[01]</span><span>Project</span></div><h3>Landing pages</h3>
+<div class="price"><span class="mono">From</span><strong>₦100,000</strong></div>
+<ul><li>One responsive page</li><li>Core interactions</li><li>Contact CTA or form</li><li>Deployment</li></ul></article>
+
+<article class="card"><div class="top mono"><span class="id">[02]</span><span>Project</span></div><h3>Business websites</h3>
+<div class="price"><span class="mono">From</span><strong>₦220,000</strong></div>
+<ul><li>Up to 5 pages</li><li>Responsive layouts and navigation</li><li>Contact form</li><li>Basic SEO metadata</li></ul></article>
+
+<article class="card"><div class="top mono"><span class="id">[03]</span><span>Project</span></div><h3>Dashboards &amp; frontend apps</h3>
+<div class="price"><span class="mono">From</span><strong>₦300,000</strong></div>
+<ul><li>Agreed screens</li><li>Reusable components</li><li>Loading, error and empty states</li><li>Specified API integration</li></ul></article>
+
+<article class="card"><div class="top mono"><span class="id">[04]</span><span>Project</span></div><h3>MVPs &amp; custom web apps</h3>
+<div class="price"><span class="mono">From</span><strong>₦700,000</strong></div>
+<ul><li>Agreed features and user flows</li><li>Integrations</li><li>Testing</li><li>Deployment, as defined in the proposal</li></ul></article>
+
+<article class="card"><div class="top mono"><span class="id">[05]</span><span>Ongoing</span></div><h3>Hourly development</h3>
+<div class="price"><span class="mono">From</span><strong>₦8,000 <small>/hour</small></strong></div>
+<p>Billed per hour of development work.</p></article>
+
+<article class="card"><div class="top mono"><span class="id">[06]</span><span>Ongoing</span></div><h3>Monthly maintenance</h3>
+<div class="price"><span class="mono">From</span><strong>₦60,000 <small>/month</small></strong></div>
+<p>Ongoing upkeep after the post-launch bug-fix window ends.</p></article>
+</div>
+</section>
+
+<section id="process">
+<div class="head"><h2>How projects work</h2><span class="mono">// The same terms on every project.</span></div>
+<div class="terms">
+<div><b>Start with a discussion</b>Every project begins with a conversation about your goals, requirements and timeline.</div>
+<div><b>Revisions &amp; support</b>Fees include two rounds of reasonable revisions and a 14-day post-launch bug-fix window for work within the agreed scope.</div>
+<div><b>Payment</b>50% to begin, 30% at an agreed milestone and 20% before final handover.</div>
+</div>
+</section>
+
+<section id="scope">
+<div class="head"><h2>Quoted separately</h2><span class="mono">// Not part of the starting price.</span></div>
+<div class="terms"><div><b>Domain</b>Your web address, such as yourbusiness.com. You buy it from a registrar each year, and I connect it to your site.</div><div><b>Hosting</b>The service that keeps your site online. Many projects fit a free plan, and busier ones need a paid plan billed by the host.</div><div><b>Paid subscriptions</b>Tools your project depends on that charge monthly or yearly, such as a CMS, email service or analytics.</div><div><b>Third-party API fees</b>Services I connect to, like payments, maps or SMS, can charge per use. I build the integration, and you pay the provider.</div><div><b>Copywriting</b>The words on your pages. You can send me the text, or writing it is quoted separately.</div><div><b>Branding</b>Your logo, colours and visual identity. Bring these with you, or they’re quoted separately.</div><div><b>Backend work not in the proposal</b>My starting prices cover the interface. Databases, servers and custom logic are included only when the proposal lists them.</div><div><b>New features</b>Anything added after the scope is agreed gets its own quote, so the original price stays fair.</div><div><b>Maintenance beyond the agreed period</b>After the 14-day bug-fix window, updates and fixes are covered by monthly maintenance or hourly work.</div></div>
+</section>
+
+<section id="contact">
+<div class="head"><h2>Have a project in mind?</h2><span class="mono">// Let’s discuss your goals and find the right scope.</span></div>
+<div class="cta"><a class="btn" href="mailto:adeyemiakinyemi101@gmail.com?subject=Project%20enquiry">Email me</a><a class="btn ghost" href="https://wa.me/2347079992561" target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost" href="https://iamadedevs.vercel.app/" target="_blank" rel="noopener">See selected work</a></div>
+<div class="contact mono"><span>adeyemiakinyemi101@gmail.com</span><span>+234 707 999 2561</span></div>
+</section>
+
+<footer class="mono"><span>© 2026 Adeyemi Akinyemi</span><span>Prices in naira, starting from. International projects quoted in USD on request.</span></footer>
+</div>
+</body>
+</html>
